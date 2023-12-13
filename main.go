@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+
 	d, err := dev.NewDevice("default")
 	if err != nil {
 		log.Fatalf("can't create new device : %s", err)
