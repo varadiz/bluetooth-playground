@@ -26,7 +26,7 @@ func main() {
 
 func advHandler(a ble.Advertisement) {
 	if a.Connectable() {
-		fmt.Printf("[%s] RSSI: %3d: %s \n", a.Addr(), a.RSSI(), a.LocalName())
+		fmt.Printf("[%s] RSSI: %3d: %s, %s \n", a.Addr(), a.RSSI(), a.LocalName(), a.TxPowerLevel())
 	}
 }
 
